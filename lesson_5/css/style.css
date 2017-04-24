@@ -1,0 +1,221 @@
+body {
+	margin: 0px;
+	padding: 0px;
+
+}
+
+.header-up {
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	background-color:  #ffffff;
+	width: 80%;
+	height: 90px;
+	margin: 0 auto;
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid #e3e8f0;
+}
+/* лготип */
+.header-up__logo {
+	background: url(../img/Portland.svg) no-repeat;
+	width: 98px;
+    height: 25px;    
+}
+/* главное меню */
+.main-menu_item {
+	text-decoration: none;
+	font-family: Montserrat;
+	color:  #343e5b;
+	font-size: 14px;
+	font-weight: 500;
+	margin: 0 20px;
+}	
+/* бокс покупки */
+.header-up__buy-box {
+	display: inline-flex;
+    align-items: center;
+
+}
+/* бокс корзины */
+.buy-box__card {
+	
+/* иконка купить */
+}
+.card__icon {
+	background: url(../img/Cart_Icon.svg) no-repeat;
+	width: 18px;
+	height: 17px;
+	display: inline-block;
+	
+
+}
+/* купить */
+.card__link {
+	text-decoration: none;
+	font-family: Montserrat;
+	text-transform: uppercase;
+	color:  #343e5b;
+	font-size: 11px;
+	font-weight: 500;
+	display: inline-block;
+}
+/* счетчик покупок */
+.card__number{
+	color:  #343e5b;
+	font-family: Montserrat;
+	text-transform: uppercase;
+	color:  #343e5b;
+	font-size: 11px;
+	font-weight: 400;
+	margin: 0 10px;
+	border-radius: 12px;
+	background-color:  #e3e8f0;
+	padding: 5px;
+}
+/* кнопка  вход */
+.btn {
+	border-radius: 16px;
+	border-width: 2px;
+	border-color:  #e3e8f0;
+	border-style: solid;
+	background: #ffffff;
+	width: 100px;
+	height: 30px;
+	text-decoration: none;
+	font-family: Montserrat;
+	text-transform: uppercase;
+	color:  #343e5b;
+	font-size: 11px;
+	font-weight: 500;
+	margin-left: 20xp;
+
+}
+/* нижнее меню */
+.header-down {
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	background-color:  #ffffff;
+	width: 80%;
+	height: 56px;
+	margin: 0 auto;
+	justify-content: space-between;
+	display: flex;	
+	align-items: center;
+
+
+	
+}
+/*  меню */
+
+.menu__item {  
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: Montserrat;
+	color:  #b9bed1;
+	font-size: 12px;
+	font-weight: 400;
+	text-align: left;
+	padding-right: 10px;
+}
+.menu__item-activ {  
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: Montserrat;
+	color:  #343e5b;
+	font-size: 12px;
+	font-weight: 500;
+	text-align: left;
+	padding-right: 10px;
+}
+/* поддержка */
+.header-down__support {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: Montserrat;
+	color:  #b9bed1;
+	font-size: 12px;
+	font-weight: 400;
+	text-align: right;
+	
+	
+}
+
+/* поиск */
+.header-down__search {
+	 padding-left: 50px; 
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: Montserrat;
+	color:  #b9bed1;
+	font-size: 12px;
+	font-weight: 400;
+	text-align: left;
+	width: 200px;
+    border-left: 1px solid #f0f2f7;
+    border-right: 1px solid #f0f2f7;
+    
+}
+.search-icon {
+	background: url(../img/Search_Icon.svg) no-repeat;
+	width: 13px;
+    height: 13px;
+	display: inline-flex;
+	margin-right: 20px;
+
+}
+
+/* контент */
+.blok {
+	width: 100%;
+	height: 500px;
+	background: #1c1e23
+}
+/* заголовок продукта */
+.blok__content {
+	width: 70%;
+	margin: 0 auto;
+	height: 500px;
+	display: flex;
+}
+.blok__content__head {
+	width: 600px;
+    margin: 100px 151px 0px 0px;
+	font-family: Montserrat;
+	color:  #ffffff;
+	font-size: 42px;
+	font-weight: 900;
+	text-align: left;
+	position: auto;
+}
+.blok__content__description {
+	margin: 40px 0px;
+	font-family: Crimson;
+	color:  #ffffff;
+	font-size: 16px;
+	line-height: 24px;
+	text-align: left;
+}
+.blok__content__buy-btn {
+	border-radius: 21px;
+	background-color:  #2754eb;
+	box-shadow: 3px 2px 13px 0px rgba(168, 173, 187, 0.3);
+	width: 165px;
+	padding: 10px 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: Montserrat;
+	color:  #ffffff;
+	font-size: 16px;/* Приближение из-за подстановки шрифтов */
+	font-weight: 400;
+	text-align: center;
+	align-items: center;
+
+}
+.content__image {	
+	background: url(../img/iphone6s.png) no-repeat;
+	width: 300px;
+	height: 500px;
+	
+
+	}
