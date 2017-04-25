@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster&subset=cyrillic');
+@font-face {
+	font-family: 'Bebas';
+	src: url('BebasNeueCyrillic.eot');
+	src: url('BebasNeueCyrillic.eot?#iefix') format('embedded-opentype'),
+		url('BebasNeueCyrillic.woff2') format('woff2'),
+		url('BebasNeueCyrillic.woff') format('woff'),
+		url('BebasNeueCyrillic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Lato';
+	src: url('Lato-Regular.eot');
+	src: url('Lato-Regular.eot?#iefix') format('embedded-opentype'),
+		url('Lato-Regular.woff2') format('woff2'),
+		url('Lato-Regular.woff') format('woff'),
+		url('Lato-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
