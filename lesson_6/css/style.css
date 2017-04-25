@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'NotoSans-Regular';
+  src: url('fonts/NotoSans-Regular.eot');
+  src: url('fonts/NotoSans-Regular.woff2') format('woff2'),
+       url('fonts/NotoSans-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NotoSans';
+  src: url('fonts/NotoSans.woff') format('woff'),
+       url('fonts/NotoSans.ttf') format('truetype'),
+       url('fonts/NotoSans.svg#NotoSans') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+    font-family: 'arvo';
+    src: url('fonts/arvo.eot');
+    src: url('fonts/arvo.eot') format('embedded-opentype'),
+         url('fonts/arvo.woff2') format('woff2'),
+         url('fonts/arvo_.woff') format('woff'),
+         url('fonts/arvo_.ttf') format('truetype'),
+         url('fonts/arvo.svg#arvo') format('svg');
+}
+h1 {
+    font-family: 'Arvo';
+    color: #3b3e6a;
+    font-weight: 400;
+    text-align: center;
+}
+.margin { 
+    margin: 60px 0px;
+  }
+
+.text-center {
+    text-align: center;
+}
+.head {
+  font-family: Arvo;
+  color:  #3b3e6a;
+  font-size: 22px;/* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  line-height: 30px;/* Приближение из-за подстановки шрифтов */
+  text-align: center;
+  padding: 30px 0px;
+}
+.text_offer {
+  font-family: NotoSans;
+  color:  #686b8b;
+  font-size: 16px;/* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  line-height: 30px;/* Приближение из-за подстановки шрифтов */
+  text-align: center;
+  }
