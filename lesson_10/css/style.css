@@ -32,7 +32,10 @@
     /* цвета колонок */
     /* кнопка */ }
     .content-offer i {
-      padding-right: 1rem; }
+      padding-right: 1rem;
+      transition: -webkit-transform 0.3s linear;
+      transition: transform 0.3s linear;
+      transition: transform 0.3s linear, -webkit-transform 0.3s linear; }
     .content-offer h2 {
       font-size: 2rem;
       margin: 1rem; }
@@ -40,6 +43,10 @@
       /* box-shadow: 0px 0px 35px 0px rgba(20, 20, 21, 0.21); */ }
     .content-offer-box:hover {
       box-shadow: 0px 0px 35px 0px rgba(20, 20, 21, 0.21); }
+      .content-offer-box:hover i {
+        -webkit-transform: rotate(-30deg);
+        -ms-transform: rotate(-30deg);
+        transform: rotate(-30deg); }
     .content-offer-color_blue {
       background-color: #4eb2f7; }
     .content-offer-color_purple {

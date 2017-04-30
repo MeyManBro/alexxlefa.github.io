@@ -36,6 +36,7 @@ $gray-color: rgba(255, 255, 255, 0.8);
 		color: $gray-color;			
 		i {
 			padding-right: 1rem;
+			transition: transform 0.3s linear;
 		}
 		h2 {
 			@extend .font-semi;
@@ -51,6 +52,9 @@ $gray-color: rgba(255, 255, 255, 0.8);
 		}
 		&-box:hover {
 			box-shadow: 0px 0px 35px 0px rgba(20, 20, 21, 0.21);
+			i {
+				transform: rotate(-30deg);
+			}
 		}
 
 		/* цвета колонок */
