@@ -1,0 +1,95 @@
+/* импорт шрифта для практики )) */
+@import 'fonts';
+
+
+/* Основные цвета блоков */
+$blue-color: rgb(78, 178, 247);
+$purple-color: rgb(192, 73, 248);
+$violet-color: rgb(129, 126, 255);
+$coral-color: rgb(247, 71, 112);
+$gray-color: rgba(255, 255, 255, 0.8);
+
+.padding-text {
+	padding: 6rem 0;
+}
+.content {
+	text-align: center;
+	color: rgb(132, 132, 132);
+	/* верхняя часть экрана */
+	&-header{
+		margin-top: 8%;
+		h1 {			
+			@extend .font-semi;
+			font-size: 4rem;
+			margin: 1rem;
+			strong {
+				color: #fc6744;
+			}
+		}
+		p {
+			margin: 1rem;
+		}
+	}
+	/* блок с предложением */
+	&-offer {
+		padding-top: 4rem;
+		color: $gray-color;			
+		i {
+			padding-right: 1rem;
+		}
+		h2 {
+			@extend .font-semi;
+			font-size: 2rem;
+			margin: 1rem;
+		}
+		p {
+			@extend .font-def;			
+		}		
+		
+		&-box {
+			/* box-shadow: 0px 0px 35px 0px rgba(20, 20, 21, 0.21); */
+		}
+		&-box:hover {
+			box-shadow: 0px 0px 35px 0px rgba(20, 20, 21, 0.21);
+		}
+
+		/* цвета колонок */
+		&-color_blue {			
+			background-color: $blue-color;
+						
+		}
+		&-color_purple {			
+			background-color: $purple-color;
+						
+		}
+		&-color_violet {			
+			background-color: $violet-color;
+						
+		}
+		&-color_coral {			
+			background-color: $coral-color;
+						
+		}
+
+		/* кнопка */
+		&-btn {
+			display: inline-block;
+			border-radius: 27px;
+			background-color:  #ffffff;
+			box-shadow: 3px 5px 14px 0px rgba(20, 20, 21, 0.09);
+			width: 90%;
+			height: 5rem;
+			color: rgb(132, 132, 132);
+			border: none;			
+		}
+		&-btn:active {
+			box-shadow: none;
+			margin: 2px;
+		}
+		&_margin {			
+			margin-top: -2.5rem;
+		}
+
+	}
+	
+}
