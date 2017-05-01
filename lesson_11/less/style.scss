@@ -1,0 +1,64 @@
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+@mixin trs($property: all, $time: 0.4s) {
+	-webkit-transition: $property $time;
+	-o-transition: $property $time;
+	transition: $property $time;
+}
+
+.box {
+		@include trs(all, .5s);
+		width: 300px;
+		height: 300px;
+		background: url(../img/bg-header.jpg) no-repeat center center;
+		background-size: cover;	
+		overflow: hidden;
+	&:hover {
+		.warp{
+		transform:translateX(0%);
+		background-color: rgba(0,0,0,.4);
+		
+	
+			}
+		}		
+	}
+.warp {
+	display: flex;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	
+	@include trs(all, 0.5s);
+	/* transform-origin: 0% 0%; */
+	transform:translateX(100%) scale(1);
+
+	}
+
+.sing {
+	text-align: center;
+	a {
+		display: block;
+		width: 200px;
+		border: 1px solid #fff;
+		border-radius: 50px;
+		height: 40px;
+		line-height: 40px;
+		color: #fff;
+		margin-top: 20px;
+		&:hover {
+			cursor: pointer;
+			text-decoration: none;
+			background-color: #fff;
+			color: #333;
+		}
+	}
+	
+}
+.content {
+	display: flex;
+}
