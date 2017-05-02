@@ -1,0 +1,71 @@
+@charset "UTF-8";
+/* импорт шрифта для практики )) */
+.font-def, .content-offer p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400; }
+
+.font-semi, .content-header h1, .content-offer h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600; }
+
+/* Основные цвета блоков */
+.padding-text {
+  padding: 6rem 0; }
+
+.content {
+  text-align: center;
+  color: #848484;
+  /* верхняя часть экрана */
+  /* блок с предложением */ }
+  .content-header {
+    margin-top: 8%; }
+    .content-header h1 {
+      font-size: 4rem;
+      margin: 1rem; }
+      .content-header h1 strong {
+        color: #fc6744; }
+    .content-header p {
+      margin: 1rem; }
+  .content-offer {
+    padding-top: 4rem;
+    color: rgba(255, 255, 255, 0.8);
+    /* цвета колонок */
+    /* кнопка */ }
+    .content-offer i {
+      padding-right: 1rem;
+      transition: -webkit-transform 0.3s linear;
+      transition: transform 0.3s linear;
+      transition: transform 0.3s linear, -webkit-transform 0.3s linear; }
+    .content-offer h2 {
+      font-size: 2rem;
+      margin: 1rem; }
+    .content-offer-box {
+      /* box-shadow: 0px 0px 35px 0px rgba(20, 20, 21, 0.21); */ }
+    .content-offer-box:hover {
+      box-shadow: 0px 0px 35px 0px rgba(20, 20, 21, 0.21); }
+      .content-offer-box:hover i {
+        -webkit-transform: rotate(-30deg);
+        -ms-transform: rotate(-30deg);
+        transform: rotate(-30deg); }
+    .content-offer-color_blue {
+      background-color: #4eb2f7; }
+    .content-offer-color_purple {
+      background-color: #c049f8; }
+    .content-offer-color_violet {
+      background-color: #817eff; }
+    .content-offer-color_coral {
+      background-color: #f74770; }
+    .content-offer-btn {
+      display: inline-block;
+      border-radius: 27px;
+      background-color: #ffffff;
+      box-shadow: 3px 5px 14px 0px rgba(20, 20, 21, 0.09);
+      width: 90%;
+      height: 5rem;
+      color: #848484;
+      border: none; }
+    .content-offer-btn:active {
+      box-shadow: none;
+      margin: 2px; }
+    .content-offer_margin {
+      margin-top: -2.5rem; }
