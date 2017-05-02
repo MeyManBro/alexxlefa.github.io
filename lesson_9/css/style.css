@@ -1,0 +1,126 @@
+@charset "UTF-8";
+/* импорт шрифтов */
+/* Шрифты */
+/* mixin */
+.reg, .header-logo span, .header-nav li a, .header-text-block p {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400; }
+
+.semi {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600; }
+
+.bold, .header-nav li.item-active a, .header-callback_btn {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700; }
+
+/* миксы цветов */
+/* шапка */
+body {
+  color: #201842; }
+
+header {
+  height: 100vh;
+  min-height: 60rem;
+  background: url(../img/bg-header.jpg) no-repeat center center; }
+
+/* основной блок шапки  */
+.header {
+  /*логотип*/
+  /* главное меню */
+  /*блок обратный звонок*/ }
+  .header-top-block {
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    height: 10rem; }
+  .header-logo {
+    height: 10rem;
+    line-height: 10rem; }
+    .header-logo img {
+      vertical-align: middle; }
+    .header-logo span {
+      vertical-align: middle;
+      margin-left: 1rem; }
+  .header-nav {
+    order-left: 1px solid rgba(164, 164, 164, 0.2);
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    text-align: center;
+    height: 10rem;
+    line-height: 10rem;
+    margin: 0; }
+    .header-nav li {
+      display: inline-block;
+      margin: 0 1rem; }
+      .header-nav li a {
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        color: #201842;
+        text-decoration: none; }
+      .header-nav li.item-active a {
+        color: #ffff3e; }
+  .header-callback {
+    text-align: center; }
+    .header-callback-text p {
+      padding-top: 1rem;
+      font-size: 1.2rem; }
+    .header-callback_btn {
+      display: inline-block;
+      margin-right: 2rem;
+      padding: 1rem 2.5rem;
+      color: #201842;
+      background-color: #ffff3e; }
+    .header-callback_phone {
+      border-left: 1px solid rgba(164, 164, 164, 0.2);
+      font-weight: bold;
+      color: #201842;
+      font-size: 2.5rem;
+      padding-left: 2rem; }
+  .header-text-block {
+    text-align: center;
+    padding-top: 5%;
+    color: #fff; }
+    .header-text-block h1 {
+      font-size: 4rem;
+      font-family: 'Raleway';
+      font-weight: normal;
+      margin-bottom: 2rem; }
+    .header-text-block p {
+      font-size: 2rem; }
+  .header-main-img {
+    margin-top: 2rem; }
+
+.main-form-block {
+  font-weight: bold;
+  width: 50rem;
+  height: 9rem;
+  margin: 5rem auto;
+  text-align: center;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.5); }
+
+.main-form-input {
+  display: inline-block;
+  background-color: #fff;
+  padding: 1rem;
+  height: 5rem;
+  vertical-align: middle;
+  margin-right: -4px;
+  border: none; }
+
+.main-form-btn {
+  display: inline-block;
+  background-color: #ffff3e;
+  height: 5rem;
+  color: #8b6552;
+  border: none;
+  vertical-align: middle;
+  padding: 1rem;
+  margin-left: -3px; }
+
+.input-addon {
+  display: inline-block;
+  background-color: #ffff3e;
+  line-height: 5rem;
+  width: 5rem;
+  vertical-align: middle; }
