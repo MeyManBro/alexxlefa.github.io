@@ -1,0 +1,20 @@
+.popup {
+    width: 300px;
+    height: 300px;
+    background-color: #aeaeae;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    transition: all 2s;
+    &:target {
+        display: block;
+    }
+    &-close {
+        position: absolute;
+        top: 2em;
+        right: 3rem;
+        text-decoration: none;
+
+    }
+}
