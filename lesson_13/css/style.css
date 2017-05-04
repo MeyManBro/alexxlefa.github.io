@@ -1,0 +1,136 @@
+@charset "UTF-8";
+body {
+  font-family: 'Panton', sans-serif;
+  font-style: 1rem;
+  color: #363636; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none;
+    color: #bee1ff; }
+
+section {
+  height: 100vh;
+  background: url(../img/bg.jpg) no-repeat center bottom; }
+
+.text-center {
+  text-align: center; }
+
+.center {
+  margin: 0 auto; }
+
+/*Шапка сайта*/
+.header {
+  font-family: 'Panton';
+  width: 100%;
+  height: 160px;
+  padding: 0 15%;
+  padding-top: 50px;
+  background-color: #fff; }
+  .header-brand {
+    font-size: 2rem;
+    display: table-cell;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase; }
+  .header-box {
+    margin-top: -10px; }
+    .header-box_tel {
+      font-size: 20px; }
+      .header-box_tel a {
+        text-transform: uppercase;
+        color: #363636; }
+    .header-box_telbtn {
+      margin-top: 10px;
+      padding: 5px 10px;
+      background: #fff;
+      color: #363636;
+      font-size: 18px;
+      font-weight: 600;
+      text-align: center;
+      border: 2px solid #282828;
+      border-radius: 10px; }
+
+.menu {
+  background-color: #333333;
+  font-size: 24px;
+  line-height: 100px; }
+  .menu li {
+    font-family: 'Panton';
+    font-weight: 300;
+    display: inline-block; }
+    .menu li:hover {
+      color: #69b1ef;
+      background-color: rgba(204, 204, 204, 0.48); }
+  .menu-item {
+    padding: 10px;
+    color: #fff; }
+
+/*1 блок*/
+.offer {
+  font-family: 'Panton';
+  padding-top: 10rem;
+  color: #fff;
+  /*заголовки главного экрана */
+  /*кнопка на главное экран*/
+  /*иконка на главное экране*/ }
+  .offer h2 {
+    font-weight: 300;
+    font-size: 10rem;
+    text-transform: uppercase; }
+  .offer h3 {
+    font-weight: 900;
+    font-size: 2.5rem;
+    text-transform: uppercase; }
+  .offer h4 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-transform: uppercase; }
+  .offer p {
+    padding-top: 5rem; }
+  .offer-btn {
+    margin-top: 1rem;
+    background-color: #059feb;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2rem;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 30px; }
+  .offer-icon {
+    margin-top: 1rem; }
+
+.box-o h3 {
+  margin-top: 5%;
+  font-weight: 900;
+  font-size: 2.5rem;
+  text-transform: uppercase; }
+
+.box-o-span {
+  display: inline-block;
+  background-color: #059feb;
+  width: 150px;
+  height: 5px; }
+
+.box-o-brdleft {
+  padding-left: 10px;
+  border-left: 3px solid #059feb; }
+
+.box-o-offer {
+  margin-top: 10rem;
+  margin-bottom: 10rem; }
+  .box-o-offer h2 {
+    font-family: Panton;
+    color: #363636;
+    font-size: 1.875rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding-top: 1rem; }
+  .box-o-offer p {
+    padding-top: 2rem;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: left; }
