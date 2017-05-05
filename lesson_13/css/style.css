@@ -24,9 +24,9 @@ section {
 .header {
   font-family: 'Panton';
   width: 100%;
-  height: 160px;
+  height: 13rem;
   padding: 0 15%;
-  padding-top: 50px;
+  padding-top: 3rem;
   background-color: #fff; }
   .header-brand {
     font-size: 2rem;
