@@ -1,0 +1,61 @@
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.slider {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0;
+	
+}
+.item {
+	box-shadow: 0px 0px 10px rgba(0,0,0,.4);
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-basis: 25%;
+	background-color: #aeaeae;
+	font-family: 'Bad Script', cursive;
+	font-size: 40px;
+	color: #fff;
+	transition: all .5s linear;
+	
+	&:hover {
+		flex-basis:100%;
+	}
+	&-1 {
+		background: url(../img/1.jpg) no-repeat center center;
+	}
+	&-2 {
+		background: url(../img/2.jpg) no-repeat center center;
+	}
+	&-3 {
+		background: url(../img/3.jpg) no-repeat center center;
+	}
+	&-4 {
+		background: url(../img/4.jpg) no-repeat center center;
+	}
+	span { 
+		font-size: 2rem;
+		text-shadow: 0px 0px 10px #000;
+	 }
+}
+
+@media (max-width: 640px) 
+		{
+			.slider{
+				height: 100vh;
+				flex-flow: column;
+			}
+			.item {
+				width: 100%;
+				
+				&:hover {
+					flex-grow:40%;
+				}
+			}
+		}
