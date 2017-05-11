@@ -251,10 +251,12 @@ $grey-light:#cccccc;
 }
 
 @media (max-width: 767px){
-	.advantages__box__text h3 {
+	.advantages__box__text {
 		font-size: 1rem;
-		padding: 0; 
-		
+		& h3 {
+			padding: 0; 
+		}
+
 	}
 
 	.header__top__phone__tel {
