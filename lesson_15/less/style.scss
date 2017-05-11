@@ -277,5 +277,12 @@ $grey-light:#cccccc;
 		}
 
 }
-
-	
+@media (max-width: 500px){
+	.advantages__box__text {
+		
+		& h3 {
+			font-size: 1.6rem;
+			padding: 0; 
+		}
+	}
+}
