@@ -1,0 +1,44 @@
+.menu {
+  z-index: 1;
+  background-image: linear-gradient(45deg, #FCA5F1, #B5FFFF); }
+  .menu-link {
+    z-index: 9;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-color: #FFF;
+    border-radius: 50%;
+    box-shadow: 1px 1px 10px rgba(84, 178, 175, 0.5);
+    position: fixed;
+    top: 20px;
+    left: 30px; }
+    .menu-link span, .menu-link span:before, .menu-link span:after {
+      display: block;
+      height: 2px;
+      width: 18px;
+      position: absolute;
+      left: 50%;
+      margin-left: -9px;
+      top: 50%;
+      margin-top: -1px;
+      background-color: #333; }
+    .menu-link span:before {
+      transition: all .5s;
+      content: '';
+      margin-top: -6px; }
+    .menu-link span:after {
+      content: '';
+      margin-top: 4px;
+      transition: all .5s; }
+    .menu-link_active span {
+      background-color: transparent; }
+      .menu-link_active span:before {
+        -webkit-transform: rotate(135deg);
+        -ms-transform: rotate(135deg);
+        transform: rotate(135deg);
+        margin-top: 0; }
+      .menu-link_active span:after {
+        -webkit-transform: rotate(-135deg);
+        -ms-transform: rotate(-135deg);
+        transform: rotate(-135deg);
+        margin-top: 0; }
