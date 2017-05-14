@@ -98,7 +98,7 @@ section {
 #main {
   background-color: #F2EBBF; }
 
-#tabs-c {
+#tabs {
   background: url(../img/bg-section.png);
   min-height: 500px;
   width: 100%;
@@ -109,75 +109,41 @@ section {
 * {
   box-sizing: border-box; }
 
-.tab-c {
-  display: inline-block;
-  width: 200px;
-  text-align: center;
-  background-color: #aeaeae;
-  height: 40px;
-  line-height: 40px;
-  border-top-left-radius: 7px;
-  border-top-right-radius: 7px; }
-  .tab-c:hover {
-    cursor: pointer; }
-  .tab-c-content {
-    display: none;
-    background-color: #ccc;
-    width: 606px;
-    height: 200px;
-    padding: 10px; }
-    .tab-c-content-1 {
-      display: block;
-      background-color: #F2EBBF; }
-    .tab-c-content-2 {
-      background-color: #ff8686; }
-    .tab-c-content-3 {
-      background-color: #8CBEB2; }
+/*.tab {
+		display: inline-block;
+		width: 200px;
+		text-align: center;
+		background-color: #aeaeae;
+		height: 40px;
+		line-height: 40px;
+		border-top-left-radius: 7px;
+		border-top-right-radius: 7px;
+		&:hover {
+			cursor: pointer;
+		}
+		&-content {
+			display: none;
+			background-color: #ccc;
+			width: 606px;
+			height: 200px;
+			padding: 10px;
+			&-1 {
+				display: block;
+				background-color: #F2EBBF;
+			}
+			&-2 {
+				background-color: #F06060;
+			}
+			&-3 {
+				background-color: #8CBEB2;
+			}
 
+		}
+	}*/
 #tabs_bootstrap {
   background-color: #F06060;
   color: #fff; }
 
-#lesson17 {
-  background-image: url(../img/bg-section.png);
-  background-size: cover;
-  min-height: 500px; }
-  #lesson17 h2, #lesson17 h3 {
-    color: #0bbaf0;
-    text-transform: uppercase;
-    font-size: 3rem;
-    font-weight: 700; }
-  #lesson17 h3 {
-    font-size: 2rem; }
-
-.accordion {
-  display: inline-block; }
-
-.tab-line {
-  display: block;
-  background: #0bbaf0;
-  height: 60px;
-  width: 850px;
-  cursor: pointer;
-  text-decoration: none;
-  color: #fff;
-  font-size: 2rem;
-  line-height: 60px;
-  margin: 5px 0; }
-  .tab-line:hover {
-    text-decoration: none; }
-
-.content_ac {
-  width: 850px;
-  border: 2px solid #ccc;
-  border-top: none;
-  border-radius: 5px;
-  text-align: left;
-  padding: 10px;
-  background-color: #fff;
-  display: none;
-  transition: all 1s;
-  margin-top: -8px; }
-
-#content_ac-1 {
-  display: block; }
+#contacts {
+  background-color: #8CBEB2;
+  color: #fff; }

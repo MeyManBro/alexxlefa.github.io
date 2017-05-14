@@ -8,7 +8,8 @@
 
     <!-- Bootstrap -->
     <!-- <link rel="stylesheet" href="css/normalize.css"> -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">    
+    <link href="css/bootstrap.min.css" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700&amp;subset=cyrillic" rel="stylesheet">   
     <link rel="stylesheet" href="css/style.css">
 
 
@@ -20,34 +21,127 @@
     <![endif]-->
   </head>
   <body>
+    <div class="panel"></div>    
     <a class="menu-link" href="#">
       <span></span>
     </a>  
-    <ul class="menu">
-      <li><a href="#">Пункт 1</a></li>
-      <li><a href="#">Пункт 2</a></li>
-      <li><a href="#">Пункт 3</a></li>
-      <li><a href="#">Пункт 4</a></li>
-      <li><a href="#">Пункт 5</a></li>
-    </ul>
+    <div class="menu">
+      <ul>
+        <li><a href="#main">Главная</a></li>
+        <li><a href="#tabs-c">Tabs</a></li>
+        <li><a href="#tabs_bootstrap">Tabs Bootstrap</a></li>
+        <li><a href="#lesson17">Аккордион</a></li>
+        <li><a href="#">Пункт 5</a></li>
+      </ul>
+    </div>
+    <div class="content">
+    <section id="main">
+      <h2>Главная</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat quas mollitia voluptatum illo dignissimos voluptates, perspiciatis quos quia deserunt. Libero voluptas doloribus quaerat! Voluptas repudiandae veniam voluptate a voluptatem maxime odio laudantium tempore, minima debitis perspiciatis expedita ex nemo hic, facere. Nemo, quia incidunt fugit odit eum! Sapiente, harum? Nihil natus, reiciendis sequi cumque nemo rem ea facere veritatis et doloremque, in, ipsa fuga maiores distinctio aliquid, error a. Dolor voluptate harum voluptatem error neque accusamus nisi earum quo dolorum totam sequi sit iure cumque, possimus libero numquam omnis! Repudiandae consequuntur qui, beatae placeat, facere adipisci vel eveniet minus unde quam mollitia incidunt similique deleniti, fugiat voluptatibus rem? Aliquam tenetur corrupti quo amet doloribus alias, est eum animi. Quod fuga reprehenderit reiciendis quisquam ab. Dignissimos inventore omnis illum dolorem debitis nulla. Laborum temporibus natus, reprehenderit voluptates ad, atque fuga molestiae aperiam perferendis. Blanditiis voluptatum dolorem dicta iste cupiditate, in eos quae ut quaerat illo, id itaque aliquam quia possimus nisi laudantium officia! Quis culpa sunt, ad recusandae quisquam facilis omnis dolores eligendi perferendis commodi provident. Consectetur distinctio nihil reiciendis provident adipisci nisi, hic voluptatem assumenda, dicta ipsam. Alias magni et ipsa consequuntur sint, id vitae explicabo officia eveniet architecto voluptate porro excepturi neque quos dolorem magnam nihil iure omnis nulla libero adipisci iste. Laboriosam libero repellat dolor culpa. Cumque asperiores modi totam dicta distinctio dolorum voluptates, esse numquam labore, ab, illum? Consequuntur rem ullam minima cumque rerum explicabo beatae, nam sit impedit? Optio fugiat dicta officia asperiores obcaecati vero nesciunt.</p>
+      
+    </section>
+    <section id="tabs-c">
 
+      <h2>Табы на JQ</h2>
+        <div class="tab-c-panel"> 
+          <div class="tabs">
+            <div data-target="tab-c-content-1" class="tab-c tab-c-1"><span>Вкладки 1</span></div>
+            <div data-target="tab-c-content-2" class="tab-c tab-c-2"><span>Вкладки 2</span></div>
+            <div data-target="tab-c-content-3" class="tab-c tab-c-3"><span>Вкладки 3</span></div>
+            <div class="tab-c-contents">
+              <div class="tab-c-content tab-c-content-1">
+                <p>Cодержимое владки-1</p>
+              </div>
+              <div class="tab-c-content tab-c-content-2">
+                <p>Cодержимое владки-2</p>
+              </div>
+              <div class="tab-c-content tab-c-content-3">
+                <p>Cодержимое владки-3</p>
+              </div>
+            </div>
+          </div>
+        </div>
+     
+    </section>
+
+    <section id="tabs_bootstrap">
+      <div class="containet">
+        <div class="row">
+          <div class="col-md-12">
+          <h2>Tab boostrap</h2>        
+          <!-- Nav tabs -->
+          <h2>Контакты</h2>
+              <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+            <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+            <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+          </ul>
+
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="home">
+            <h3>Home</h3>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam ea, reiciendis autem velit consequuntur soluta possimus assumenda sit qui omnis.</div>
+            <div role="tabpanel" class="tab-pane" id="profile">
+            <h3>Profile</h3>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam ea, reiciendis autem velit consequuntur soluta possimus assumenda sit qui omnis.</div>
+            <div role="tabpanel" class="tab-pane" id="messages">
+            <h3>Messages</h3>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam ea, reiciendis autem velit consequuntur soluta possimus assumenda sit qui omnis.</div>
+            <div role="tabpanel" class="tab-pane" id="settings">
+            <h3>Settings</h3>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam ea, reiciendis autem velit consequuntur soluta possimus assumenda sit qui omnis.</div>
+          </div>
+          </div>
+        </div>
+      </div>    
+    </section>
+    <section id="lesson17" class="text-center">
+      <h2>Ответы на вопросы</h2>
+      <h3>Которые нам задают чаще всего</h3>
+
+        <div class="accordion">
+          <div >
+            <a class="tab-line" href="#content_ac-1">Сколько времени может занять быстрая уборка 3-х комнатной квартиры?</a>
+          </div>        
+          <div id="content_ac-1" class="content_ac">
+            <p>Быстрая уборка 3 комнатной квартиры, которая включает в себя мытье полов, протирку пыли и зеркал занимает около 3 часов. Но, конечно, многое зависит от степени загрязненности и заставленности комнат.</p>
+          </div>
+           <div >
+            <a class="tab-line" href="#content_ac-2">Сколько времени может занять быстрая уборка 3-х комнатной квартиры?</a>
+          </div>        
+          <div id="content_ac-2" class="content_ac">
+            <p>Быстрая уборка 3 комнатной квартиры, которая включает в себя мытье полов, протирку пыли и зеркал занимает около 3 часов. Но, конечно, многое зависит от степени загрязненности и заставленности комнат.</p>
+          </div>
+        
+        <div >
+            <a class="tab-line" href="#content_ac-3">Сколько времени может занять быстрая уборка 3-х комнатной квартиры?</a>
+          </div>        
+          <div id="content_ac-3" class="content_ac">
+            <p>Быстрая уборка 3 комнатной квартиры, которая включает в себя мытье полов, протирку пыли и зеркал занимает около 3 часов. Но, конечно, многое зависит от степени загрязненности и заставленности комнат.</p>
+          </div>
+           <div >
+            <a class="tab-line" href="#content_ac-4">Сколько времени может занять быстрая уборка 3-х комнатной квартиры?</a>
+          </div>        
+          <div id="content_ac-4" class="content_ac">
+            <p>Быстрая уборка 3 комнатной квартиры, которая включает в себя мытье полов, протирку пыли и зеркал занимает около 3 часов. Но, конечно, многое зависит от степени загрязненности и заставленности комнат.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
      
    <script src="js/jquery-1.12.4.min.js"></script>
-   
-      <script>
-        $(document).ready(function(){
-          var link = $('.menu-link');
-          var link_active = $('menu-link_active');
+    <!-- меню урок 16 -->
+      <script src='js/menu.js'></script>
+      <script src='js/tab.js'></script>
+      <script src='js/accordion.js'></script>
 
-          link.click(function(){
-            link.toggleClass('menu-link_active');
-          })
-          link_active.click(function(){
-            link_active.removeClass('menu-link');
-          })
-        })
-      </script>
+      <script src='js/bootstrap.min.js'></script>
+
+
     <!-- Include all compiled plugins (below), or include individual files as needed -->
   
   </body>

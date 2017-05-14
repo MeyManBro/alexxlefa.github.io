@@ -107,7 +107,7 @@ section {
 	#main {
 		background-color: #F2EBBF;		
 	}
-	#tabs-c {
+	#tabs {
 		background:url(../img/bg-section.png);
 		min-height: 500px;
 		width: 100%;
@@ -117,7 +117,7 @@ section {
 	* {
 		box-sizing: border-box;
 	}
-	.tab-c {
+	/*.tab {
 		display: inline-block;
 		width: 200px;
 		text-align: center;
@@ -140,68 +140,19 @@ section {
 				background-color: #F2EBBF;
 			}
 			&-2 {
-				background-color: #ff8686;
+				background-color: #F06060;
 			}
 			&-3 {
 				background-color: #8CBEB2;
 			}
 
 		}
-	}
+	}*/
 	#tabs_bootstrap {
 		background-color: #F06060;
 		color: #fff;
 	}
-#lesson17 {
-	background-image: url(../img/bg-section.png);
-	background-size: cover;
-	min-height: 500px;	
-	& h2, h3 {
-		color: #0bbaf0;
-		text-transform: uppercase;
-		font-size: 3rem;
-		font-weight: 700;
+	#contacts {
+		background-color: #8CBEB2;
+		color: #fff;
 	}
-	h3 {
-		font-size: 2rem;
-	}
-}
-.accordion {
-	display: inline-block;
-		
-
-	
-
-}
-.tab-line {
-	display: block;
-	background: #0bbaf0;
-	height: 60px;
-	width: 850px;
-	cursor: pointer;
-	text-decoration: none;
-	color: #fff;
-	font-size: 2rem;
-	line-height: 60px;
-	margin: 5px 0;
-	&:hover {
-		text-decoration: none;
-	}		
-
-
-}
-.content_ac {
-	width: 850px;
-	border: 2px solid #ccc;
-	border-top: none;
-	border-radius: 5px;
-	text-align: left;
-	padding: 10px;
-	background-color: #fff;
-	display: none;
-	transition: all 1s;
-	margin-top: -8px;
-	}
-#content_ac-1 {
-	display: block;
-}
