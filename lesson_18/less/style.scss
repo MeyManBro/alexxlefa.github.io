@@ -54,17 +54,20 @@
 		}
 	}
 }
-.form {
+.box {
 	padding: 20px;
-	background-color: #ccc;
+	
 	align-items: center;
 }
 .top_img {
 	margin-top: 70px;
 	padding: 20px;
-	animation: img 4s ease infinite;
+	animation: img 8s ease infinite;
 }
+input {
+	margin-bottom: 20px;
+  }
 @keyframes img {
-	from { transform: rotate(4deg) translateX(10px) rotate(4deg); }
-	to{ transform: rotate(350deg) translateX(10px) rotate(-350deg); }	
+	from { transform: rotate(4deg) translateX(15px) rotate(4deg); }
+	to{ transform: rotate(350deg) translateX(15px) rotate(-350deg); }	
 }
