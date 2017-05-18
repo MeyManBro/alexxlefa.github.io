@@ -62,12 +62,14 @@
 
     <script>
       $(document).ready(function(){
-        var userName = $('#input-name').val,
-            userEmail = $('#input-email').val,
-            userPassword = $('#input-password').val,
-            btn = $('btn'),
-            form = $('#form');
+        var btn = $('btn');
+        
         btn.click(function(){
+          var userName = $('#input-name').val,
+            userEmail = $('#input-email').val,
+            userPassword = $('#input-password').val,            
+            form = $('#form');
+
           if (userName !== '') {
           form.submit();
         } else {
