@@ -41,7 +41,7 @@
 
                   <form action="zaiv.html">
                     <input class="form-control" id="input-name" name="name" placeholder="Имя или никнейм" type="text">
-                    <input class="form-control" id="input-email" name="name" placeholder="Eamil" type="text">
+                    <input class="form-control" id="input-email" name="name" placeholder="Email" type="text">
                     <input class="form-control" id="input-password" name="name" placeholder="Пароль" type="text">
                     <span></span>
                     <button class="btn btn-danger" type="button">Сохранить ></button>
@@ -57,13 +57,14 @@
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery-1.12.4.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
 
     <script>
       $(document).ready(function(){
         var btn = $('btn');
-        
+
         btn.click(function(){
           var userName = $('#input-name').val,
             userEmail = $('#input-email').val,
@@ -74,10 +75,10 @@
           form.submit();
         } else {
           alert(' Имя не заполнено')
-        }
-      }); 
-        
-      });
+        } 
+  });
+});
+      
     </script>
   </body>
 </html>
