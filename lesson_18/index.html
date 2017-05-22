@@ -9,7 +9,7 @@
 
     <!-- Bootstrap -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:700|Ubuntu:400,500&amp;subset=cyrillic" rel="stylesheet">  
-    
+    <link rel="stylesheet" href="css/font-awesome.min.css"> 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 
@@ -23,7 +23,7 @@
   <body>  
     <div class="container block__bg">
       <div class="row text-center">
-        <div class="col-md-8 block">
+        <div class="block">
           <div class="row block__line">
             <div class="col-md-6 block__left">
               <div class="row text-center">
@@ -34,18 +34,31 @@
             <div class="col-md-6  block__right">
               <div class="row">
                 <h2>Сохрани свой аккаунт</h2>
-                <h3>Получи бесплатно неограниченное количество форм, вопросов и ответов.</h3>
+                <h3>Получи бесплатно неограниченное<br> количество форм, вопросов и ответов.</h3>
               </div>
               <div  class="box">
                 <div class="row">
 
                   <form id='form' action="zaiv.html">
-                    <input class="form-control" id="input-name" placeholder="Имя или никнейм" type="text">
-                    <input class="form-control" id="input-email" placeholder="Email" type="text">
-                    <input class="form-control" id="input-password" placeholder="Пароль" type="text">
-                    <span></span>
-                    <button class="btn btn-danger" type="button">Сохранить ></button>
+                  <div class="input_line">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <input  id="input-name" name="name" placeholder="Имя или никнейм" type="text">
+                  </div>
+                  <div class="input_line">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <input  id="input-email" name="email" placeholder="Email" type="email">
+                  </div>
+                  <div class="input_line">
+                    <i class="fa fa-lock" aria-hidden="true"></i>
+                    <input  id="input-password" name="password" placeholder="Пароль" type="text">
+                  </div>
+                    
+                    <button class="btn" type="submit">Сохранить   <i class="fa fa-chevron-right" aria-hidden="true"></i></button>
                   </form>
+                  <span class="account">У вас есть аккаунт?
+                    <span class="account_in">Войти</span>
+                  </span>
+
                  
                 </div>
               </div>              
@@ -59,18 +72,56 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->    
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
-
+    <!-- форма -->
     <script>
+      $('#form').validate({
+      rules: {
+        // имя
+        name: {
+          required: true,
+          minlength: 2
+        },
+        // почта
+        email: {
+          required: true,
+          minlength: 3,
+          email: true
+        },
+        // паролль
+        password: {
+          required: true,
+          minlength: 2
+        }
+      },
+      messages: {
+        name: {
+          required: 'Это поле обязательно для ввода',
+          minlength: 'Не менее 2х символов'
+        },
+        email: {
+          required: 'Это поле обязательно для ввода',
+          minlength: 'Не менее 4х символов',
+          email: 'Введите корректный email'
+        },
+        password: {
+          required: 'Это поле обязательно для ввода',
+          minlength: 'Не менее 4х символов'
+        }
+      }
+    });
+    </script>     
+    
+    <!-- <script>
       $(document).ready(function(){
         var btn = $('.btn');
 
         btn.click(function(){
-          var userName = $('#input-name').val,
-            userEmail = $('#input-email').val,
-            userPassword = $('#input-password').val,            
+          var userName = $('#input-name').val(),
+            userEmail = $('#input-email').val(),
+            userPassword = $('#input-password').val(),            
             form = $('#form');
 
-          if (userName !=='') {
+          if (userName !=='' & userEmail !=='') {
           form.submit();
         } else {
           alert(' Имя не заполнено')
@@ -78,6 +129,6 @@
   });
 });
       
-    </script>
+    </script>    --> 
   </body>
 </html>

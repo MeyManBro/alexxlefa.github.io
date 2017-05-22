@@ -1,3 +1,4 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/B\:\/alexxlefa\/alexxlefa\.github\.io\/lesson_18\/less\/style\.scss}line{font-family:\000031}}
 .block__bg {
   background-color: #6dafad;
   background-image: url(../img/bg.png);
@@ -7,31 +8,43 @@
   height: 100vh;
   width: 100%;
   margin: 0;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
   align-items: center; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/B\:\/alexxlefa\/alexxlefa\.github\.io\/lesson_18\/less\/style\.scss}line{font-family:\0000314}}
 .block {
   background-color: #ffffff;
-  width: 1000px;
-  height: 700px;
   padding: 60px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/B\:\/alexxlefa\/alexxlefa\.github\.io\/lesson_18\/less\/style\.scss}line{font-family:\0000317}}
+  .block:before {
+    content: url(../img/Ellipse.png);
+    display: block;
+    position: absolute;
+    top: 11rem;
+    left: 50rem; }
+@media -sass-debug-info{filename{font-family:file\:\/\/B\:\/alexxlefa\/alexxlefa\.github\.io\/lesson_18\/less\/style\.scss}line{font-family:\0000324}}
+  .block:after {
+    content: url(../img/Ellipse.png);
+    display: block;
+    position: absolute;
+    bottom: 11rem;
+    right: 50rem;
+    transform: rotate(180deg); }
+@media -sass-debug-info{filename{font-family:file\:\/\/B\:\/alexxlefa\/alexxlefa\.github\.io\/lesson_18\/less\/style\.scss}line{font-family:\0000332}}
   .block__line {
     height: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/B\:\/alexxlefa\/alexxlefa\.github\.io\/lesson_18\/less\/style\.scss}line{font-family:\0000336}}
   .block__left {
     /*position: relative;
-		display: flex;
-		justify-content: center;
-		align-items: center;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;*/
     height: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/B\:\/alexxlefa\/alexxlefa\.github\.io\/lesson_18\/less\/style\.scss}line{font-family:\0000349}}
   .block__right {
     height: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/B\:\/alexxlefa\/alexxlefa\.github\.io\/lesson_18\/less\/style\.scss}line{font-family:\0000352}}
     .block__right h2 {
       font-family: 'Open sans';
       color: #000000;
@@ -39,41 +52,82 @@
       font-weight: 700;
       line-height: 45px;
       text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/B\:\/alexxlefa\/alexxlefa\.github\.io\/lesson_18\/less\/style\.scss}line{font-family:\0000360}}
     .block__right h3 {
-      font-family: 'Ubuntu';
+      font-family: Ubuntu;
       color: #000000;
       font-size: 16px;
       font-weight: 400;
       line-height: 22px;
       text-align: center; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/B\:\/alexxlefa\/alexxlefa\.github\.io\/lesson_18\/less\/style\.scss}line{font-family:\0000370}}
 .box {
   padding: 20px;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  justify-content: center;
+  display: flex; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/B\:\/alexxlefa\/alexxlefa\.github\.io\/lesson_18\/less\/style\.scss}line{font-family:\0000376}}
 .top_img {
   margin-top: 70px;
   padding: 20px;
-  -webkit-animation: img 8s ease infinite;
   animation: img 8s ease infinite; }
 
-input {
-  margin-bottom: 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/B\:\/alexxlefa\/alexxlefa\.github\.io\/lesson_18\/less\/style\.scss}line{font-family:\0000381}}
+.input_line {
+  position: relative; }
+@media -sass-debug-info{filename{font-family:file\:\/\/B\:\/alexxlefa\/alexxlefa\.github\.io\/lesson_18\/less\/style\.scss}line{font-family:\0000383}}
+  .input_line .fa {
+    display: block;
+    position: absolute;
+    top: 18px;
+    left: 5px;
+    color: #ccc; }
 
-@-webkit-keyframes img {
-  from {
-    -webkit-transform: rotate(4deg) translateX(15px) rotate(4deg);
-    transform: rotate(4deg) translateX(15px) rotate(4deg); }
-  to {
-    -webkit-transform: rotate(350deg) translateX(15px) rotate(-350deg);
-    transform: rotate(350deg) translateX(15px) rotate(-350deg); } }
+@media -sass-debug-info{filename{font-family:file\:\/\/B\:\/alexxlefa\/alexxlefa\.github\.io\/lesson_18\/less\/style\.scss}line{font-family:\0000391}}
+input {
+  display: block;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  width: 330px;
+  height: 50px;
+  margin: 10px 0;
+  padding-left: 30px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/B\:\/alexxlefa\/alexxlefa\.github\.io\/lesson_18\/less\/style\.scss}line{font-family:\00003101}}
+.btn {
+  background-color: #82c5c3;
+  padding: 5px 30px;
+  border-radius: 30px;
+  color: #fff;
+  font-family: 'Open Sans';
+  font-size: 16px;
+  line-height: 45px;
+  font-weight: 700;
+  margin-top: 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/B\:\/alexxlefa\/alexxlefa\.github\.io\/lesson_18\/less\/style\.scss}line{font-family:\00003111}}
+  .btn .fa {
+    padding-top: 10px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/B\:\/alexxlefa\/alexxlefa\.github\.io\/lesson_18\/less\/style\.scss}line{font-family:\00003115}}
+.account {
+  display: inline-block;
+  font-family: Ubuntu;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: center;
+  padding-top: 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/B\:\/alexxlefa\/alexxlefa\.github\.io\/lesson_18\/less\/style\.scss}line{font-family:\00003125}}
+  .account_in {
+    color: #f69a7a; }
 
 @keyframes img {
   from {
-    -webkit-transform: rotate(4deg) translateX(15px) rotate(4deg);
     transform: rotate(4deg) translateX(15px) rotate(4deg); }
   to {
-    -webkit-transform: rotate(350deg) translateX(15px) rotate(-350deg);
     transform: rotate(350deg) translateX(15px) rotate(-350deg); } }
+
+/*# sourceMappingURL=style.css.map */

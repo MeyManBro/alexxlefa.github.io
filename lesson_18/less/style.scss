@@ -13,9 +13,22 @@
 }
 .block {	
 	background-color: #ffffff;
-	width: 1000px;
-	height: 700px;
 	padding: 60px;
+	&:before {
+		content: url(../img/Ellipse.png);		
+		display: block;
+		position: absolute;
+		top: 11rem;
+		left: 50rem;		
+	}
+	&:after {
+		content: url(../img/Ellipse.png);		
+		display: block;
+		position: absolute;
+		bottom: 11rem;
+		right: 50rem;
+		transform: rotate(180deg);
+	}
 	&__line {
 		height: 100%;
 	}
@@ -45,7 +58,7 @@
 			text-align: center;
 		}
 		& h3 {
-			font-family: 'Ubuntu';
+			font-family: Ubuntu;
 			color:  #000000;
 			font-size: 16px;
 			font-weight: 400;
@@ -55,18 +68,65 @@
 	}
 }
 .box {
-	padding: 20px;
-	
+	padding: 20px;	
 	align-items: center;
+	justify-content: center;
+    display: flex;
 }
 .top_img {
 	margin-top: 70px;
 	padding: 20px;
 	animation: img 8s ease infinite;
 }
+.input_line {
+	position: relative;
+	.fa {
+ 	display: block;
+ 	position: absolute;
+ 	top: 18px;
+ 	left: 5px;
+ 	color: #ccc;
+ }
+}
 input {
-	margin-bottom: 20px;
+	display: block;
+	border: none;
+	border-bottom: 1px solid #ccc;		
+	width: 330px;
+	height: 50px;
+	margin: 10px 0; 
+	padding-left: 30px;
   }
+ 
+.btn {
+	background-color: #82c5c3;
+	padding: 5px 30px;
+	border-radius: 30px;
+	color: #fff;
+	font-family: 'Open Sans';
+	font-size: 16px;
+	line-height: 45px;
+	font-weight: 700;
+	margin-top: 20px;
+	.fa {
+		padding-top: 10px;
+	}
+}
+.account {
+	display: inline-block;
+	font-family: Ubuntu;
+	color:  #000000;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 22px;
+	text-align: center;
+	padding-top: 20px;
+
+	&_in {
+		color: #f69a7a;
+	}
+	}
+
 @keyframes img {
 	from { transform: rotate(4deg) translateX(15px) rotate(4deg); }
 	to{ transform: rotate(350deg) translateX(15px) rotate(-350deg); }	
