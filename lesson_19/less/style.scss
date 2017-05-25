@@ -1,0 +1,152 @@
+body {
+	color: #fff;
+	font-family: Open Sans;
+}
+h1 {
+	font-size: 4rem;
+	font-weight: 900;
+	text-transform: uppercase;
+}
+h3 span {
+	color: #e0b759;
+}
+.no_margin {
+	margin: 0;
+}
+
+
+.main_header {
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(45deg, rgba(242, 70, 69, 0.22), rgba(235, 192, 141, 0.7)), url(../img/bg_slon.jpg);
+	background-repeat: none;
+	background-position: left;
+	background-size: cover;
+	&_form_login {
+		
+		height: 8rem;
+		line-height: 8rem;
+		background-color: rgba(0,0,0,.6);
+		padding: 0;
+		& .modal-link {
+			font-family: Open Sans;
+			text-decoration: none;
+			color: #fff;
+			text-transform: uppercase;
+			border: 2px solid #fff;
+			padding: 2rem 1rem;
+			&:hover {
+				color: #e0b759;
+				border: 2px solid #e0b759;
+			}
+		}
+	}
+	&_sale {
+		margin-top: 12rem;
+		background-color: rgba(0,0,0,.6);
+		border: 3px solid #fff;
+		padding: 1rem;
+	}
+}
+
+
+.popup {
+	background-color: #41372A;
+	display: none;
+	width: 40rem;
+	height: auto;
+	position: fixed;
+	left: 50%;
+	top: 20%;
+	transform: translateX(-50%);
+	text-align: center;
+	color: #fff;
+	padding: 2rem;
+	&-overlay {
+		position: fixed;
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		width: 100vw;
+		height: 100vh;
+		background-color: rgba(81, 96, 99, 0.79);
+		display: none;
+
+	}
+	&-close {
+		color: #fff;
+		font-size: 3rem;
+		position: absolute;
+		top: 10px;
+		right: 15px;
+		text-decoration: none;
+		transition: all .5s;
+		opacity: .6;		
+		&:hover {
+			text-decoration: none;
+			opacity: 1;
+			transform: rotate(180deg);
+			color: black;
+			
+		}
+	}
+}
+
+/*форма*/
+form {
+	margin-top: 2rem;
+	
+	.input_line {
+	position: relative;
+}
+	input {
+		padding-left: 50px;
+		text-decoration: none;
+		color: #69451F;
+		height: 50px;
+		width: 100%;
+		line-height: 50px;
+		margin-bottom: 25px;
+		
+		}
+
+	.fa {
+		position: absolute;
+		top: 10px;
+		left: 15px;
+		color: #CCAA60;
+		font-size: 25px;
+	}
+	.btn {
+		background-color: #F4D580;
+		color: #69451F;
+	}
+	
+}
+.box {
+	display: inline-block;
+	margin: 30px;
+
+	.price {
+		margin: 10px;
+		border: 1px solid #e0b759 ;
+		transition: all .5s;
+		&:hover {
+			border: 1px solid #ccc;
+		}
+	}
+	img {
+		height: 150px;
+		width: auto;				
+		
+	}
+	a {
+		display: inline-block;
+		text-decoration: none;
+		color: #e0b759;
+	}
+}
+.modal-title, .control-label {
+	color: #555;
+}
