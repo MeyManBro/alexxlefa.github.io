@@ -16,7 +16,7 @@ body {
 
 
 #wrapper {
-	height: 100vh;
+	height: 100%;
     width: 100%;
     margin: 0 auto;
     background-color: rgba(0, 0, 0, 0.7);
@@ -29,9 +29,19 @@ body {
 	color: #555;
 	padding: 0;
 }
+.tubular-mute{
+		font-size: 80px;
+		opacity: .8;
+		color: #fff;
+		display: block;
+		position: absolute;
+		right: 4rem;
+		top: 3rem;
+		text-decoration: none;
+	}
 
 .header {
-	margin-top: 15%;
+	margin-top: 6rem;
 	p {		
 		font-size: 14px;
 		font-weight: 700;
@@ -51,15 +61,18 @@ body {
 		line-height: 67px;
 		text-align: center;
 	}
-	.btn-play {
-		margin-top: 5%;
+	.btn-play  {
+		margin-top: 3rem;
 		font-size: 100px;
 		opacity: .6;
 	}
+	
 	&-form {
-		margin-top: 10%;
+		display: flex;
+		justify-content: center;
+		margin-top: 6rem;
 		align-items: center;
-		margin-left: 23%;
+		
 
 		input {
 			text-decoration: none;
@@ -94,7 +107,7 @@ body {
 }
 
 .footnote {
-	margin-top: 10%;
+	margin-top: 5rem;
 	p {
 		font-weight: 300;
 		line-height: 27px;
@@ -178,5 +191,14 @@ body {
 	.block-line {
 		margin-top: 6rem;
 	}
+
+}
+
+.offer {
+	display: block;
+	position: relative;
+	z-index: 1;
+	margin-top: 7rem;
+	padding-bottom: 7rem;
 
 }
