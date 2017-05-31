@@ -1,0 +1,29 @@
+html {
+  font-size: 16px; }
+
+body {
+  font-family: 'Ubuntu';
+  font-size: 16px; }
+
+.header_box {
+  background-color: #65a9d9;
+  position: relative; }
+.header_line {
+  height: 5.625rem;
+  line-height: 5.625rem; }
+  .header_line_menu ul li {
+    display: inline;
+    text-decoration: none;
+    text-transform: uppercase;
+    list-style: none; }
+    .header_line_menu ul li a {
+      text-decoration: none;
+      color: #2d394c;
+      font-weight: 300;
+      margin-right: 2rem;
+      text-align: left; }
+.header_pic {
+  height: 750px;
+  width: 550px; }
+
+/*# sourceMappingURL=style.css.map */
