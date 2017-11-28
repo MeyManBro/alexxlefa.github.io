@@ -1,0 +1,187 @@
+body {
+  font-family: 'Open Sans', sans-serif; }
+
+html {
+  font-size: 10px; }
+
+h1, .row {
+  margin: 0; }
+
+a {
+  text-decoration: none; }
+  a:focus {
+    outline: none;
+    text-decoration: none; }
+
+.main {
+  height: 100vh;
+  width: 100%;
+  background: #000 url(../img/lake.jpg) center center no-repeat;
+  position: relative; }
+  .main h1 {
+    font-size: 4.3rem;
+    margin: 0; }
+  .main p {
+    font-size: 2.7rem;
+    margin: 1rem; }
+  .main__wrapper {
+    display: table-cell;
+    vertical-align: middle; }
+  .main__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: -webkit-gradient(linear, left top, right bottom, from(rgba(242, 190, 10, 0.3)), to(rgba(150, 11, 244, 0.25)));
+    background: -webkit-linear-gradient(top left, rgba(242, 190, 10, 0.3), rgba(150, 11, 244, 0.25));
+    background: -o-linear-gradient(top left, rgba(242, 190, 10, 0.3), rgba(150, 11, 244, 0.25));
+    background: linear-gradient(top left, rgba(242, 190, 10, 0.3), rgba(150, 11, 244, 0.25));
+    display: table;
+    vertical-align: middle;
+    z-index: 1; }
+  .main__header {
+    color: #fff;
+    text-align: center;
+    color: #fff;
+    z-index: 2; }
+  .main__line {
+    height: 2px;
+    width: 20rem;
+    margin: 1.5em auto;
+    background-color: #fff; }
+  .main__down {
+    position: absolute;
+    bottom: 15%;
+    left: -webkit-calc(50% - 20px);
+    left: calc(50% - 20px);
+    color: rgba(255, 255, 255, 0.83);
+    font-size: 40px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+    .main__down:hover {
+      color: rgba(251, 238, 63, 0.77); }
+
+.block {
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 10rem; }
+  .block__header {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #646464; }
+  .block__portfolio {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    text-align: center; }
+    .block__portfolio__cart-btn {
+      cursor: pointer;
+      display: inline-block;
+      color: #646464;
+      font-size: 2rem;
+      margin: 5rem auto;
+      border-bottom: 1px solid transparent; }
+      .block__portfolio__cart-btn:hover {
+        text-decoration: none;
+        border-bottom: 1px dotted  #646464; }
+    .block__portfolio__cart img {
+      width: 100%;
+      max-width: 360px;
+      -webkit-box-shadow: 0px 4px 29px 0px rgba(87, 92, 97, 0.54);
+              box-shadow: 0px 4px 29px 0px rgba(87, 92, 97, 0.54); }
+
+.footer {
+  background-color: #646464;
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
+  padding: 5rem 0; }
+  .footer h3 {
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 0rem;
+    margin-bottom: 3rem; }
+  .footer p {
+    font-size: 2rem;
+    font-weight: 200;
+    margin: 1rem 0; }
+  .footer__icon {
+    font-size: 40px;
+    color: #e4e4e4;
+    margin: .5rem;
+    line-height: 4rem; }
+    .footer__icon:hover {
+      color: rgba(251, 238, 63, 0.9); }
+  .footer__btn {
+    display: inline-block;
+    color: #e4e4e4;
+    font-size: 1.8rem;
+    border: 2px solid #e4e4e4;
+    padding: 10px 20px;
+    width: 80%;
+    max-width: 300px;
+    -webkit-border-radius: 30px;
+            border-radius: 30px;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s; }
+    .footer__btn:hover {
+      text-decoration: none;
+      cursor: pointer;
+      border: 2px solid #e4e4e4;
+      color: #646464;
+      background-color: #e4e4e4; }
+
+.modal img {
+  width: 100%; }
+
+.modal-title {
+  font-weight: 400;
+  font-size: 2rem; }
+
+.close {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right: 2rem;
+  top: 1.5rem;
+  font-size: 2rem; }
+
+.modal-btn {
+  font-size: 1.6rem;
+  font-weight: 600;
+  display: inline-block;
+  color: #333;
+  border: 2px solid #333;
+  padding: 10px 20px;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s; }
+  .modal-btn:hover {
+    text-decoration: none;
+    background-color: #333;
+    color: #fff; }
+
+@media (min-width: 0px) and (max-width: 480px) {
+  html {
+    font-size: 8px; }
+  .block__portfolio__cart-btn {
+    font-size: 3rem; }
+  .footer h3 {
+    font-weight: 400;
+    font-size: 3rem;
+    padding-bottom: 10px; }
+  .footer p {
+    font-size: 2rem;
+    font-weight: 200; }
+  .footer a {
+    font-size: 3.2rem; }
+  .space {
+    margin: 0 0 50px 0; } }
+
+@media (min-width: 480px) and (max-width: 768px) {
+  .block__portfolio__cart-btn {
+    display: block;
+    width: 40%; }
+  .space {
+    margin: 0 0 50px 0; } }
